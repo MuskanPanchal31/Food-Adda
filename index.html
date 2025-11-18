@@ -43,6 +43,16 @@
     .left p { font-size:15px; max-width:100%; }
     .right { height:260px; }
   }
+  @media (max-width: 768px) {
+  section[style*="background-image"] > div {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  section[style*="background-image"] form {
+    width: 100% !important;
+  }
+}
 </style>
 
 </head>
@@ -127,184 +137,144 @@
   </div>
 </section>
 
-<section style="width:100%; background:#f8fafc; font-family:'Poppins', sans-serif;">
-  <div style="
-      max-width:900px; 
-      margin:auto; 
-      display:flex; 
-      align-items:center; 
-      gap:5px; 
-      flex-wrap:wrap;
-    ">
+<section class="py-5" style="background:#f8fafc; font-family:'Poppins', sans-serif;">
+  <div class="container">
+    <div class="row align-items-center">
 
-    <!-- LEFT TEXT CONTENT -->
-     
-    <div style="flex:1; min-width:250px;">
-      <h2 style="font-size:26px; font-weight:700; color:#096b26; margin-bottom:5px;">
-        Snack Smart, Live Better
-      </h2>
+      <!-- LEFT TEXT CONTENT -->
+      <div class="col-12 col-md-6 mb-3 mb-md-0 text-md-start text-center">
+        <h2 class="fw-bold" style="font-size:26px; color:#096b26; margin-bottom:5px;">
+          Snack Smart, Live Better
+        </h2>
+        <p style="font-size:15px; line-height:1.5; color:#475569; margin:0;">
+          At Food Adda, we bring you a flavorful world of fresh, high-quality snacks crafted to match every
+          taste. Our mission is to serve delicious, trustworthy, and wholesome food that adds joy to every moment.
+        </p>
+      </div>
 
-      <p style="font-size:15px; line-height:1.5; color:#475569; margin:0;">
-        At Food Adda, we bring you a flavorful world of fresh, high-quality snacks crafted to match every
-         taste. 
-        Our mission is to serve delicious, trustworthy, and wholesome food that adds joy to every moment.
-      </p>
+      <!-- RIGHT IMAGE -->
+      <div class="col-12 col-md-6 text-center">
+        <img src="images/merge.png" class="img-fluid" style="max-width:350px;" alt="Makhana Packet">
+      </div>
+
     </div>
-
-    <!-- RIGHT IMAGE -->
-    <div style="flex:0 0 auto; text-align:center;">
-      <img src="images/merge.png" style="width:100%; max-width:300px;"alt="Makhana Packet">
-    
-    </div>
-
   </div>
 </section>
 
-<section style="background-color: #e5e8c1; padding: 50px 0;">
-    <div style="max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 20px;">
-        
-        <h2 style="font-family: serif; color: #556b2f; margin-bottom: 5px;">🌿 Our Makhana <br>Made Naturally With Care</h2>
-        <p style="font-family: sans-serif; color: #333; margin-bottom: 40px; font-size: 16px;">
-            Premium lotus seeds are carefully handpicked from trusted farms.
-            The seeds are roasted on a gentle flame without any chemicals or additives. <br> Each batch is cleaned, quality-checked, and packed to deliver pure and natural makhana.
-        </p>
 
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+<section class="py-5" style="background-color: #e5e8c1;">
+  <div class="container text-center">
 
-            <!-- ITEM 1 -->
-            <div style="flex-basis: 23%; text-align: center; margin-bottom: 20px;">
-                <img src="images/m1.png" 
-                     style="width: 100%; height: 220px; object-fit: cover; border-radius: 5px; margin-bottom:10px;">
-                <p style="font-family: serif; color: #556b2f; font-size: 16px; margin: 0;">First Stage</p>
-                <p style="font-family: sans-serif; color: #556b2f; font-size: 14px; margin: 5px 0 0;">From Madhubani</p>
-            </div>
+    <h2 class="mb-3" style="font-family: serif; color: #556b2f;">
+      🌿 Our Makhana <br>Made Naturally With Care
+    </h2>
+    
+    <p class="mb-4" style="font-family: sans-serif; color: #333; font-size: 16px;">
+      Premium lotus seeds are carefully handpicked from trusted farms.
+      The seeds are roasted on a gentle flame without any chemicals or additives. <br> 
+      Each batch is cleaned, quality-checked, and packed to deliver pure and natural makhana.
+    </p>
 
-            <!-- ITEM 2 -->
-            <div style="flex-basis: 23%; text-align: center; margin-bottom: 20px;">
-                <img src="images/m2.png" 
-                     style="width: 100%; height: 220px; object-fit: cover; border-radius: 5px; margin-bottom:10px;">
-                <p style="font-family: serif; color: #556b2f; font-size: 16px; margin: 0;">Lotus Flowers</p>
-                <p style="font-family: sans-serif; color: #556b2f; font-size: 14px; margin: 5px 0 0;"></p>
-            </div>
+    <div class="row">
 
-            <!-- ITEM 3 -->
-            <div style="flex-basis: 23%; text-align: center; margin-bottom: 20px;">
-                <img src="images/M3.png" 
-                     style="width: 100%; height: 220px; object-fit: cover; border-radius: 5px; margin-bottom:10px;">
-                <p style="font-family: serif; color: #556b2f; font-size: 16px; margin: 0;">Lotus Seeds</p>
-                <p style="font-family: sans-serif; color: #556b2f; font-size: 14px; margin: 5px 0 0;"></p>
-            </div>
+      <!-- ITEM 1 -->
+      <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+        <img src="images/m1.png" style="width: 100%; height: 220px; object-fit: cover; border-radius: 5px;" alt="">
+        <p style="font-family: serif; color: #556b2f; font-size: 16px; margin:0;">First Stage</p>
+        <p style="font-family: sans-serif; color: #556b2f; font-size: 14px; margin:5px 0 0;">From Madhubani</p>
+      </div>
 
-            <!-- ITEM 4 -->
-            <div style="flex-basis: 23%; text-align: center; margin-bottom: 20px;">
-                <img src="images/M4.png" 
-                     style="width: 100%; height: 220px; object-fit: cover; border-radius: 5px; margin-bottom:10px;">
-                <p style="font-family: serif; color: #556b2f; font-size: 16px; margin: 0;">Super Food</p>
-                <p style="font-family: sans-serif; color: #556b2f; font-size: 14px; margin: 5px 0 0;">Fox Nuts</p>
-            </div>
+      <!-- ITEM 2 -->
+      <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+        <img src="images/m2.png" style="width: 100%; height: 220px; object-fit: cover; border-radius: 5px;" alt="">
+        <p style="font-family: serif; color: #556b2f; font-size: 16px; margin:0;">Lotus Flowers</p>
+        <p style="font-family: sans-serif; color: #556b2f; font-size: 14px; margin:5px 0 0;"></p>
+      </div>
 
-        </div>
+      <!-- ITEM 3 -->
+      <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+        <img src="images/M3.png" style="width: 100%; height: 220px; object-fit: cover; border-radius: 5px;" alt="">
+        <p style="font-family: serif; color: #556b2f; font-size: 16px; margin:0;">Lotus Seeds</p>
+        <p style="font-family: sans-serif; color: #556b2f; font-size: 14px; margin:5px 0 0;"></p>
+      </div>
+
+      <!-- ITEM 4 -->
+      <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+        <img src="images/M4.png" style="width: 100%; height: 220px; object-fit: cover; border-radius: 5px;" alt="">
+        <p style="font-family: serif; color: #556b2f; font-size: 16px; margin:0;">Super Food</p>
+        <p style="font-family: sans-serif; color: #556b2f; font-size: 14px; margin:5px 0 0;">Fox Nuts</p>
+      </div>
+
     </div>
+  </div>
 </section>
+
 
 <!--  query section -->
-<section style="
-    background-image:url('images/background.jpg');
+<section class="py-5" style="
+    background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center;
-    padding: 60px 20px;
-    font-family:'Arial', sans-serif;
+    font-family: 'Arial', sans-serif;
 ">
-    <div style="
-        max-width: 1000px; 
-        margin: 0 auto; 
-        display: flex; 
-        gap: 40px; 
-        align-items: flex-start; 
-        flex-wrap: wrap;
-    ">
+    <div class="container">
+        <div class="row gx-4 gy-4 align-items-start">
 
-        <!-- LEFT CONTENT -->
-        <div style="
-            flex:1 1 300px; 
-            text-align: left;
-            padding-top: 20px;
-        ">
-            <h3 style="
-                color:#333333; 
-                font-size:30px; 
-                margin-bottom:15px; 
-                border-bottom:3px solid #037c30; 
-                padding-bottom:10px; 
-                display:inline-block;
-            ">
-                Get in Touch
-            </h3>
+            <!-- LEFT CONTENT -->
+            <div class="col-12 col-md-6">
+                <h3 class="mb-3" style="
+                    color:#333333; 
+                    font-size:30px; 
+                    border-bottom:3px solid #037c30; 
+                    padding-bottom:10px; 
+                    display:inline-block;
+                ">Get in Touch</h3>
 
-            <p style="color:#444; font-size:16px; line-height:1.6; margin-bottom:20px;">
-                Our dedicated team is ready to answer your questions regarding reservations, private events, or feedback on our service.
-            </p>
+                <p style="color:#444; font-size:16px; line-height:1.6;">
+                    Our dedicated team is ready to answer your questions regarding reservations, private events, or feedback on our service.
+                </p>
 
-            <ul style="list-style:none; padding:0; font-size:16px;">
-                <li style="margin-bottom:10px; color:#222;">📞 +91 8349602877</li>
-                <li style="margin-bottom:10px; color:#222;">📧 panchalmuskan321@gmail.com</li>
-                <li style="margin-bottom:10px; color:#222;">📍 Bangalore, Karnataka</li>
-            </ul>
-           <div style="margin-top: 15px; padding:10px; background-color:#f5f5f5; text-align: center; border-radius: 10px; border: 1px solid #ddd;"> <h3 style="margin:0; color:#448813; font-size:20px; font-weight: bold;">Strategic Partnership</h3> 
-            <p style="margin-top:5px; font-size:16px; color:#333; font-weight: 600;">Narendra Panchal</p> </div>
+                <ul class="list-unstyled" style="font-size:16px;">
+                    <li class="mb-2">📞 +91 8349602877</li>
+                    <li class="mb-2">📧 panchalmuskan321@gmail.com</li>
+                    <li class="mb-2">📍 Bangalore, Karnataka</li>
+                </ul>
+
+                <div class="mt-3 p-3 bg-light text-center rounded border" style="border-color: #ddd;">
+                    <h3 class="mb-1" style="color:#448813; font-size:20px; font-weight:bold;">Strategic Partnership</h3>
+                    <p class="mb-0" style="font-size:16px; color:#333; font-weight:600;">Narendra Panchal</p>
+                </div>
+            </div>
+
+            <!-- RIGHT FORM BOX -->
+            <div class="col-12 col-md-6">
+                <div class="p-4 bg-white rounded shadow" style="border-top:5px solid #037c30;">
+                    <h4 class="text-center mb-4" style="color:#333; font-size:22px;">Send Us a Message</h4>
+
+                    <form class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" rows="4" placeholder="Your Detailed Query" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn w-100" style="background-color:#037c30; color:white; font-size:17px; font-weight:bold;">Submit Inquiry</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </div>
-
-        <!-- RIGHT FORM BOX -->
-        <div style="
-            flex:1 1 350px; 
-            background-color:#ffffff; 
-            padding:25px; 
-            border-radius:8px; 
-            box-shadow:0 10px 30px rgba(0,0,0,0.1); 
-            border-top:5px solid #037c30;
-        ">
-            <h4 style="color:#333; margin-bottom:20px; font-size:22px; text-align:center;">
-                Send Us a Message
-            </h4>
-
-            <form style="
-                display: grid; 
-                grid-template-columns: 1fr 1fr; 
-                gap: 15px;
-            ">
-
-                <input type="text" placeholder="Full Name" required
-                    style="padding:12px; border:1px solid #ccc; border-radius:4px; font-size:15px; grid-column:span 1;">
-
-                <input type="email" placeholder="Email Address" required
-                    style="padding:12px; border:1px solid #ccc; border-radius:4px; font-size:15px; grid-column:span 1;">
-
-                <input type="text" placeholder="Subject"
-                    style="padding:12px; border:1px solid #ccc; border-radius:4px; font-size:15px; grid-column:1 / 3;">
-
-                <textarea placeholder="Your Detailed Query" rows="4" required
-                    style="padding:12px; border:1px solid #ccc; border-radius:4px; font-size:15px; grid-column:1 / 3; resize: vertical;"></textarea>
-
-                <button type="submit"
-                    style="
-                        grid-column:1 / 3;
-                        background-color:#037c30;
-                        color:white;
-                        padding:14px;
-                        border:none;
-                        border-radius:4px;
-                        font-size:17px;
-                        font-weight:bold;
-                        cursor:pointer;
-                        transition:0.3s;
-                    ">
-                    Submit Inquiry
-                </button>
-            </form>
-        </div>
-
     </div>
 </section>
+
 
 
 <footer style="background:#0f172a; padding:40px 20px; color:white; font-family:'Poppins', sans-serif;">
