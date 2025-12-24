@@ -199,56 +199,124 @@ box-shadow:0 4px 10px rgba(2,6,23,0.08);
     margin-bottom:20px;
   }
 }
+#sf-hero-section {
+  background-image: url("images/sf-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  
+   /* 🔽 height kam */
+}
+
+.sf-hero-overlay {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 80px 30px 50px;   /* 🔽 height kam */
+  position: relative;
+ 
+}
+
+/* LEFT TOP LOGO */
+.sf-hero-logo-top {
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.sf-hero-logo-img {
+ height: 80px;   /* navbar jaisa */
+  width: 80px;
+  border-radius: 50px;
+  
+}
+
+/* CENTER TEXT */
+.sf-hero-text-box {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.sf-hero-title {
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #9f5705;
+  font-family: "Playfair Display", serif;
+
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .sf-hero-logo-img {
+    width: 70px;
+  }
+
+  .sf-hero-title {
+    font-size: 30px;
+  }
+}
 
 </style>
 
 </head>
 <body>
+<section id="sf-hero-section">
+  <div class="sf-hero-overlay">
 
-<!-- MERGED HEADER + HERO SECTION -->
-<!-- HERO SECTION -->
-<section class="hero-section" style="
-  background-image: url('images/makhana-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top:120px; /* space for fixed header */
-">
+    <!-- LEFT TOP LOGO -->
+    <div class="sf-hero-logo-top">
+      <img src="images/mainlogo.png" alt="Super Food Adda Logo" class="sf-hero-logo-img">
+    </div>
 
-  <!-- FIXED HEADER (outside flow, correct way) -->
-  <div class="container py-2 d-flex justify-content-between align-items-center fixed-top bg-white shadow-sm">
-    <img src="images/mainlogo.png" alt="Logo" style="height:70px; border-radius:50%;">
-    <a href="#" class="btn text-white px-4" style="background:#037c30;">Query</a>
+    <!-- CENTER TEXT -->
+    <div class="sf-hero-text-box">
+      <h1 class="sf-hero-title">Super Food Adda</h1>
+     
+    </div>
+
   </div>
+</section>
 
+
+<!-- HERO SECTION -->
+<section class="hero-section" >
   <!-- HERO CONTENT -->
   <div class="container">
-    <div class="row align-items-center py-5">
+    <div class="row align-items-center">
 
       <!-- LEFT CONTENT -->
       <div class="col-md-6 text-md-start text-center">
-        <h1 style="font-family:Sofia, sans-serif; color:rgb(163, 73, 24);">
-          The Lightest Bite with the Biggest Delight.
+        <h1 style="
+          font-family:'Sofia', cursive;
+          color:rgb(163, 73, 24);
+          font-size:48px;
+          margin-top:10px;
+        ">
+          The Lightest Bite<br>
+          with the Biggest Delight
         </h1>
 
-        <p style="font-weight:bold; margin-top:15px;">
-          Light to eat, easy to crave,<br>
-          Healthy munch for the life you pave.
-          Flavors that lift your day up high,<br>
-          Food Adda Makhana — give it a try.
+        <p style="
+          font-weight:500;
+          margin-top:20px;
+          font-size:17px;
+          line-height:1.7;
+        ">
+          Light to eat, easy to crave.<br>
+          A healthy munch for a mindful life.
+          Premium makhanas packed with taste,<br>
+          <b>Super Food Adda</b> — snack without waste.
         </p>
 
-        <div class="d-flex gap-3 mt-4 justify-content-md-start justify-content-center">
-          <a href="#" class="btn text-white px-4" style="background:#037c30;">Explore</a>
-          <a href="#" class="btn text-white px-4" style="background:#d78821;">Contact Us</a>
-        </div>
       </div>
 
       <!-- RIGHT IMAGE -->
-      <div class="col-md-6 text-center">
+      <div class="col-md-6 text-center mt-4 mt-md-0">
         <div style="
           width:100%;
-          height:380px;
+          height:420px;
           background-image:url('images/makhana1.png');
           background-size:contain;
           background-repeat:no-repeat;
@@ -260,6 +328,7 @@ box-shadow:0 4px 10px rgba(2,6,23,0.08);
   </div>
 
 </section>
+
 
 <!-- second  section -->
  <!-- INFO SECTION -->
@@ -288,10 +357,7 @@ box-shadow:0 4px 10px rgba(2,6,23,0.08);
           makhana is an ideal snack for people of all ages — from children to fitness enthusiasts. It is naturally gluten-free, low in calories, and easy to digest, making it suitable for weight management and daily snacking without guilt.
         </p>
 
-        <button style="background:#037c30; border:none; padding:12px 30px; 
-                       color:white; margin-top:15px; border-radius:5px; font-size:16px;">
-          Learn More
-        </button>
+       
 
       </div>
 
