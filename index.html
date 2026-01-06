@@ -9,7 +9,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-<link rel="icon" type="image/png" href="images/mainlogo.png">
+<link rel="icon" href="images/mainlogo1.png">
+
 <style>
   body {
     margin:0;
@@ -224,8 +225,8 @@ box-shadow:0 4px 10px rgba(2,6,23,0.08);
 }
 
 .sf-hero-logo-img {
- height: 80px;   /* navbar jaisa */
-  width: 80px;
+  height: 120px;   /* navbar jaisa */
+  width: 140px;
   border-radius: 50px;
   
 }
@@ -241,7 +242,7 @@ box-shadow:0 4px 10px rgba(2,6,23,0.08);
   font-size: 80px;
   font-weight: 600;
   margin-bottom: 30px;
-  color: #9f5705;
+  color: #565f03;
   font-family: "Playfair Display", serif;
 
 }
@@ -268,6 +269,53 @@ box-shadow:0 4px 10px rgba(2,6,23,0.08);
   border-radius: 50%;
   object-fit: cover;
 }
+@media (max-width: 992px) {
+  .sf-hero-title {
+    font-size: 52px;
+  }
+
+  .sf-hero-logo-img {
+    height: 80px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #sf-hero-section {
+    min-height: auto;
+  }
+
+  .sf-hero-overlay {
+    padding: 80px 16px 40px;
+    text-align: center;
+  }
+
+  .sf-hero-logo-top {
+    position: static;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .sf-hero-logo-img {
+    height: 65px;
+  }
+
+  .sf-hero-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .sf-hero-title {
+    font-size: 26px;
+  }
+
+  .sf-hero-logo-img {
+    height: 55px;
+  }
+}
 </style>
 
 </head>
@@ -277,7 +325,7 @@ box-shadow:0 4px 10px rgba(2,6,23,0.08);
 
     <!-- LEFT TOP LOGO -->
     <div class="sf-hero-logo-top">
-      <img src="images/mainlogo.png" alt="Super Food Adda Logo" class="sf-hero-logo-img">
+      <img src="images/mainlogo1.png" alt="Super Food Adda Logo" class="sf-hero-logo-img">
     </div>
 
     <!-- CENTER TEXT -->
@@ -392,7 +440,7 @@ From everyday munching to special moments, our mission is to serve delicious, tr
 
       <!-- RIGHT IMAGE -->
       <div class="col-12 col-md-6 text-center">
-        <img src="images/merge1.png" class="img-fluid" style="max-width:350px;" alt="Makhana Packet">
+        <img src="images/merge1.jpg" class="img-fluid" style="max-width:350px;" alt="Makhana Packet">
       </div>
 
     </div>
